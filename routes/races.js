@@ -1,13 +1,8 @@
 import express from 'express';
-import {} from '../data/races-info.js';
-
 const racesRouter = express.Router();
 
-racesRouter.get('/', (res, req) => {
-    res.render('pages/home', 
-    {
-
-    })
+racesRouter.get ('/', (req, res) => {
+    res.render('pages/races');
 })
 
-export default racesRouter
+export default racesRouter;

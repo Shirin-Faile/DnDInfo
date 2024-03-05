@@ -1,13 +1,8 @@
 import express from 'express';
-import {} from '../data/classes-info.js';
-
 const classesRouter = express.Router();
 
 classesRouter.get ('/', (req, res) => {
-    res.render('pages/home', 
-    {
-
-    })
+    res.render('pages/classes');
 })
 
-export default classesRouter
+export default classesRouter;

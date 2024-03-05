@@ -3,6 +3,7 @@ import * as path from 'path';
 import backgroundsRouter from "./routes/backgrounds.js"
 import classesRouter from "./routes/classes.js";
 import racesRouter from "./routes/races.js";
+import { backgrounds } from "./data/backgrounds-info.js";
 
 const app = express();
 const port = 3077;
