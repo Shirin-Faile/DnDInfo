@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('../partials/head.ejs') %>
+    <%- include('../partials/head.ejs') %>
 
-    <body>
+        <body>
             <%- include('../partials/header.ejs') %>
-
+                <section class="flex-container">
+                    <div class="main-container">
+                        <%- include ('../partials/races-details.ejs') %>
+                    </div>
+                </section>
             <%- include('../partials/footer.ejs') %>
-    </body>
+        </body>
 </html>

@@ -1,0 +1,17 @@
+<div class="races">
+    <% if (locals.races && locals.races.length > 0) { %>
+        <% races.forEach(function(race) { %>
+            <div class="race-container <%= race.race %>">
+                <p><img src="<%= race.image %>" alt="<%= race.race %>"></p>
+                <p><span>Race:</span> <%= race.race %></p>
+                <p><span>About:</span> <%= race.about %></p>
+                <p><span>Ability Score:</span> <%= race.abilityscore %></p>
+                <p><span>Age:</span> <%= race.age %></p>
+                <p><span>Alignment:</span> <%= race.alignment %></p>
+                <p><span>Size:</span> <%= race.size %></p>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>What am I..</p>
+    <% } %>
+</div>

@@ -2,7 +2,6 @@
     <% if (locals.backgrounds && locals.backgrounds.length > 0) { %>
         <% backgrounds.forEach(function(background) { %>
             <div class="character-container <%= background.name %>">
-                <p><%= background.name %></p>
                 <p><img src="<%= background.image %>" alt="<%= background.name %>"></p>
                 <p><span>Background:</span> <%= background.background %></p>
                 <p><span>Description:</span> <%= background.description %></p>

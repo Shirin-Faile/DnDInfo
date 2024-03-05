@@ -2,8 +2,8 @@
     <% if (locals.roles && locals.roles.length > 0) { %>
         <% roles.forEach(function(role) { %>
             <div class="character-container <%= role.name %>">
-                <p><%= role.name %></p>
                 <p><img src="<%= role.image %>" alt="<%= role.name %>"></p>
+                <p><span>Role:</span> <%= role.name %></p>
                 <p><span>About:</span> <%= role.about %></p>
                 <p><span>Armor:</span> <%= role.armor %></p>
                 <p><span>Weapons:</span> <%= role.weapons %></p>
@@ -14,6 +14,6 @@
             </div>
         <% }); %>
     <% } else { %>
-        <p>Roleless.</p>
+        <p>Rickroll.</p>
     <% } %>
 </div>
