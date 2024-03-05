@@ -1,0 +1,19 @@
+<div class="roles">
+    <% if (locals.roles && locals.roles.length > 0) { %>
+        <% roles.forEach(function(role) { %>
+            <div class="character-container <%= role.name %>">
+                <p><%= role.name %></p>
+                <p><img src="<%= role.image %>" alt="<%= role.name %>"></p>
+                <p><span>About:</span> <%= role.about %></p>
+                <p><span>Armor:</span> <%= role.armor %></p>
+                <p><span>Weapons:</span> <%= role.weapons %></p>
+                <p><span>Tools:</span> <%= role.tools %></p>
+                <p><span>Throws:</span> <%= role.throws %></p>
+                <p><span>Skills:</span> <%= role.skills %></p>
+                <p><span>Equipment:</span> <%= role.equipment %></p>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>Roleless.</p>
+    <% } %>
+</div>

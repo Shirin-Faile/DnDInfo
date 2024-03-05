@@ -1,9 +1,8 @@
 import express from "express";
 import * as path from 'path';
 import backgroundsRouter from "./routes/backgrounds.js"
-import classesRouter from "./routes/classes.js";
+import rolesRouter from "./routes/roles.js";
 import racesRouter from "./routes/races.js";
-import { backgrounds } from "./data/backgrounds-info.js";
 
 const app = express();
 const port = 3077;
@@ -23,7 +22,7 @@ app.get("/home", (req, res) =>
 });
 
 app.use('/backgrounds', backgroundsRouter);
-app.use('/classes', classesRouter);
+app.use('/roles', rolesRouter);
 app.use('/races', racesRouter);
 
 app.listen(port, console.log(`Listening on ${port}`))
