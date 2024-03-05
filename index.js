@@ -14,8 +14,13 @@ app.use(express.static(path.join(__dirname, '/public')))
 
 app.get("/", (req, res) => 
 {
-    res.render('pages/home')
-})
+    res.redirect("/home");
+});
+
+app.get("/home", (req, res) => 
+{
+    res.render('pages/home');
+});
 
 app.use('/backgrounds', backgroundsRouter);
 app.use('/classes', classesRouter);

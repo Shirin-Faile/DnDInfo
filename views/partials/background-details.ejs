@@ -1,0 +1,18 @@
+<div class="backgrounds">
+    <% if (locals.backgrounds && locals.backgrounds.length > 0) { %>
+        <% backgrounds.forEach(function(background) { %>
+            <div class="backgrounds-container <%= background.name %>">
+                <p><%= background.name %></p>
+                <p><img src="<%= background.image %>" alt="<%= background.name %>"></p>
+                <p><span>Background:</span> <%= background.background %></p>
+                <p><span>Description:</span> <%= background.description %></p>
+                <p><span>Skill Proficiencies:</span> <%= background.skills %></p>
+                <p><span>Tool Proficiencies:</span> <%= background.tools %></p>
+                <p><span>Languages:</span> <%= background.languages %></p>
+                <p><span>Equipment:</span> <%= background.equipment %></p>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>My past is a mystery..</p>
+    <% } %>
+</div>

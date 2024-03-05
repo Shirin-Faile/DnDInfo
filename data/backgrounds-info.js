@@ -4,6 +4,7 @@ function background(imageUrl, background, description, skills, tools, languages,
     this.description = description, 
     this.skills = skills, 
     this.tools = tools,
+    this.languages = languages,
     this.equipment = equipment
 }
 
