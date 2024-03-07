@@ -1,0 +1,10 @@
+<div class="subclass">
+    <h2>Subclasses</h2>
+    <% subClasses.forEach(function(subClass) { %>
+        <div class="subclass-container">
+            <p><span>Name:</span> <%= subClass.name %></p>
+            <p><span>Subclass:</span> <%= subClass.subclass %></p>
+            <p><span>Description:</span> <%= subClass.description %></p>
+        </div>
+    <% }); %>
+</div>
