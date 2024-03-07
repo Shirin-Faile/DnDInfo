@@ -1,6 +1,8 @@
-<div class="roles">
+<div class="container">
     <h2>Roles</h2>
-    <a href="/roles/subclasses">View All Subclasses</a>
+    <div class="link">
+        <a href="/roles/subclasses">View all the unique subclasses</a>
+    </div>
     <% if (locals.roles && locals.roles.length > 0) { %>
         <% roles.forEach(function(role) { %>
             <div class="info-container <%= role.name %>">

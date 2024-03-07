@@ -14,22 +14,23 @@ html {
 }
 
 body {
-    background-color: #FFDDD2;
+    background-color: #ede0d4;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin: 0;
     min-height: 100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header,
 footer {
-    background-color: #E29578;
+    background-color: #6c584c;
     padding: var(--padding-m);
 }
 
 footer {
+    margin-top: auto;
     text-align: center;
 }
 
@@ -38,6 +39,15 @@ h1 {
     padding: var(--padding-l);
     margin: 0;
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.link {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -53,11 +63,57 @@ nav ul a {
     color: black;
 }
 
+.welcome-text {
+    text-align: center;
+    padding: 40px;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text h2 {
+    color: #333030;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    color: #292626;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 20px;
+}
+
+.info-container {
+    margin-bottom: 20px;
+    background-image: url('../img/paper-texture2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+p span {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
 
 @media screen and (min-width: 1024px) {
 
     nav ul li a:hover {
-        color: yellow;
+        color: #dde5b6;
     }
 
 }

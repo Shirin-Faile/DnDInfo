@@ -1,6 +1,8 @@
-<div class="races">
+<div class="container">
     <h2>Races</h2>
-    <a href="/races/uniqueRaces">View all the unique races</a>
+    <div class="link">
+        <a href="/races/uniqueRaces">View all the unique races</a>
+    </div>
     <% if (locals.races && locals.races.length > 0) { %>
         <% races.forEach(function(race) { %>
             <div class="info-container <%= race.race %>">
