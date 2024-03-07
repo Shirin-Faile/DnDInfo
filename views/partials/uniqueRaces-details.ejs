@@ -1,0 +1,18 @@
+<div class="uniqueRaces">
+    <h2>Unique Races</h2>
+    <% if (locals.uniqueRaces && locals.uniqueRaces.length > 0) { %>
+        <% uniqueRaces.forEach(function(uniqueRace) { %>
+            <div class="uniqueRace-container <%= uniqueRace.name %>">
+                <p><img src="<%= uniqueRace.image %>" alt="<%= uniqueRace.uniqueRace %>"></p>
+                <p><span>Race:</span> <%= uniqueRace.race %></p>
+                <p><span>About:</span> <%= uniqueRace.about %></p>
+                <p><span>Ability Score:</span> <%= uniqueRace.abilityscore %></p>
+                <p><span>Age:</span> <%= uniqueRace.age %></p>
+                <p><span>Alignment:</span> <%= uniqueRace.alignment %></p>
+                <p><span>Size:</span> <%= uniqueRace.size %></p>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>No unique races available.</p>
+    <% } %>
+</div>

@@ -9,7 +9,7 @@ function race(imageUrl, race, about, abilityscore, age, alignment, size) {
 }
 
 let dragonborn = new race(
-    "./img/dragonborn.png",
+    "/img/dragonborn.png",
     "Dragonborn",
     "Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.",
     "Your Strength score increases by 2, and your Charisma score increases by 1.",
@@ -19,7 +19,7 @@ let dragonborn = new race(
 )
 
 let dwarf = new race(
-    "./img/dwarf.png",
+    "/img/dwarf.png",
     "Dwarf",
     "Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs – these common threads unite all dwarves.",
     "Your Constitution score increases by 2.",
@@ -29,7 +29,7 @@ let dwarf = new race(
 )
 
 let elf = new race(
-    "./img/elf.png",
+    "/img/elf.png",
     "Elf",
     "Elves are a magical people of otherworldly grace, living in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry.",
     "Your Dexterity score increases by 2.",
@@ -39,7 +39,7 @@ let elf = new race(
 )
 
 let gnome = new race(
-    "./img/gnome.png",
+    "/img/gnome.png",
     "Gnome",
     "A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their close-knit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.",
     "Your Intelligence score increases by 2.",
@@ -49,7 +49,7 @@ let gnome = new race(
 )
 
 let halfelf = new race(
-    "./img/half-elf.png",
+    "/img/half-elf.png",
     "Half-elf",
     "Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves.",
     "Your Charisma score increases by 2, and two other ability scores of your choice each increase by 1.",
@@ -59,7 +59,7 @@ let halfelf = new race(
 )
 
 let halforc = new race(
-    "./img/half-orc.png",
+    "/img/half-orc.png",
     "Half-orc",
     "When alliances between humans and orcs are sealed by marriages, half-orcs are born. Some half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.",
     "Your Strength score increases by 2, and your Constitution score increases by 1.",
@@ -69,7 +69,7 @@ let halforc = new race(
 )
 
 let halfling = new race(
-    "./img/halfling.png",
+    "/img/halfling.png",
     "Halfling",
     "The comforts of home are the goals of most halflings' lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies. Others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. Halflings work readily with others, and they are loyal to their friends, whether halfling or otherwise. They can display remarkable ferocity when their friends, families, or communities are threatened.",
     "Your Dexterity score increases by 2.",
@@ -79,7 +79,7 @@ let halfling = new race(
 )
 
 let human = new race(
-    "./img/human.png",
+    "/img/human.png",
     "Human",
     "In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that's why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
     "Your ability scores each increase by 1.",
@@ -89,7 +89,7 @@ let human = new race(
 )
 
 let tiefling = new race(
-    "./img/tiefling.png",
+    "/img/tiefling.png",
     "Tiefling",
     "To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of Asmodeus, overlord of the Nine Hells (and many of the other powerful devils serving under him) into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children's children will always be held accountable.",
     "Your Charisma score increases by 2.",
@@ -99,3 +99,36 @@ let tiefling = new race(
 )
 
 export const races = [dragonborn, dwarf, elf, gnome, halfelf, halforc, halfling, human, tiefling]
+
+
+let tortle = new race(
+    "/img/tortle.png",
+    "Tortle",
+    "Tortles have a saying: “We wear our homes on our backs.” These turtle folk live on many worlds, most often journeying up and down coasts, along waterways, and across the sea. Tortles don’t have a unified story of how they were created, but they all have a sense of being mystically connected to the natural world. Carrying their shelter on their backs gives tortles a special feeling of security wherever they go, for even if they visit a far, unknown country, they have a place to lay their heads.",
+    "Your Strength score increases by 2, and your Wisdom score increases by 1.",
+    "Young tortles crawl for a few weeks after birth before learning to walk on two legs. They reach adulthood by the age of 15 and live an average of 50 years.",
+    "Tortles tend to lead orderly, ritualistic lives. They develop customs and routines, becoming more set in their ways as they age. Most are lawful good. A few can be selfish and greedy, tending more toward evil, but it's unusual for a tortle to shuck off order in favor of chaos.",
+    "Tortle adults stand 5 to 6 feet tall and average 450 pounds. Their shells account for roughly one-third of their weight. Your size is Medium."
+)
+
+let tabaxi = new race(
+    "/img/tabaxi.png",
+    "Tabaxi",
+    "Created by the Cat Lord—a divine being of the Upper Planes—to blend the qualities of humanoids and cats, tabaxi are a varied people in both attitude and appearance. In some lands, tabaxi live like the cats they resemble, naturally curious and at home in playful environments. In other places, tabaxi live as other folk do, not exhibiting the feline behavior the Cat Lord intended.",
+    "Your Dexterity score increases by 2, and your Charisma score increases by 1.",
+    "Tabaxi have lifespans equivalent to humans.",
+    " Tabaxi tend toward chaotic alignments, as they let impulse and fancy guide their decisions. They are rarely evil, with most of them driven by curiosity rather than greed or other dark impulses.",
+    "Tabaxi are taller on average than humans and relatively slender. Your size is Medium."
+)
+
+let owlin = new race(
+    "/img/owlin.png",
+    "Owlin",
+    "Distant kin of giant owls from the Feywild, owlin come in many shapes and sizes, from petite and fluffy to wide-winged and majestic. Owlin have arms and legs like other Humanoids, as well as wings that extend from their back and shoulders.Like owls, owlin are graced with feathers that make no sound when they move or fly, making it easy for them to sneak up on you in the library.",
+    "Increase one ability score by 2, and increase a different one by 1.",
+    "Owlin typically live for around a century and mature at much the same rate as humans.",
+    "Can vary widely in their beliefs, values, and behaviors. They are not inherently predisposed to any specific alignment.",
+    "You are Medium or Small. You choose the size when you select this race."
+)
+
+export const uniqueRaces =  [tortle, tabaxi, owlin]
