@@ -3,7 +3,7 @@
     <a href="/roles/subclasses">View All Subclasses</a>
     <% if (locals.roles && locals.roles.length > 0) { %>
         <% roles.forEach(function(role) { %>
-            <div class="character-container <%= role.name %>">
+            <div class="info-container <%= role.name %>">
                 <p><img src="<%= role.image %>" alt="<%= role.name %>"></p>
                 <p><span>Role:</span> <%= role.name %></p>
                 <p><span>About:</span> <%= role.about %></p>

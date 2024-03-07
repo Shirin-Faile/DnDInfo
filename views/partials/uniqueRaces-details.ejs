@@ -2,7 +2,7 @@
     <h2>Unique Races</h2>
     <% if (locals.uniqueRaces && locals.uniqueRaces.length > 0) { %>
         <% uniqueRaces.forEach(function(uniqueRace) { %>
-            <div class="uniqueRace-container <%= uniqueRace.name %>">
+            <div class="info-container <%= uniqueRace.name %>">
                 <p><img src="<%= uniqueRace.image %>" alt="<%= uniqueRace.uniqueRace %>"></p>
                 <p><span>Race:</span> <%= uniqueRace.race %></p>
                 <p><span>About:</span> <%= uniqueRace.about %></p>
